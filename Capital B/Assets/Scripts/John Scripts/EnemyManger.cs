@@ -12,7 +12,10 @@ public class EnemyManger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemy.GetComponent<EnemyMovement>().target = target;
+        if (target != null)
+        {
+            enemy.GetComponent<EnemyMovement>().target = target;
+        }
     }
 
     // Update is called once per frame
