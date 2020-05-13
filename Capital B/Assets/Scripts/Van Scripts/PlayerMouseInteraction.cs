@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMouseInteraction : MonoBehaviour
 {
-    new Camera camera;
+    Camera camera;
     public Interactable focus;
     // Start is called before the first frame update
     void Start()

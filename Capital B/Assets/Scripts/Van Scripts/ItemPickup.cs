@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ItemPickup : Interactable
 {
-    public Item item;
-
+    
     public override void Interact()
     {
         base.Interact();
@@ -19,15 +18,9 @@ public class ItemPickup : Interactable
     }
     void PickUp()
     {
-        Debug.Log("Picked up  " + item.name);
-        if (Inventory.instance.Add(item))
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Debug.Log("Couldn't Pick Up Item");
-        }
+        Debug.Log("Picked up  " + transform.name);
+        Inventory.instance.Add(Item); 
+        Destroy(gameObject);
     }
 
     // Update is called once per frame

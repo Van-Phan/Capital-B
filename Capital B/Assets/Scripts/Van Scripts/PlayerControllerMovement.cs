@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerControllerMovement : MonoBehaviour
 {
     //fields
-    new public Transform camera;
+    public Transform camera;
     public CharacterController player;
 
     private float verticalVelocity;
     private float gravity = 9.81f;
-    private float jumpForce = 5.0f;
+    private float jumpForce = 10.0f;
 
     public float walkSpeed = 2;
     public float runSpeed = 6;
