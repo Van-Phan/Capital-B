@@ -31,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
             zVel = 2;
         }
 
-        rb.velocity = new Vector3(xVel, 0, zVel);
+        rb.velocity = new Vector3(xVel, rb.velocity.y, zVel);
 
         float rotation = Mathf.Atan2(xVel, zVel) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, rotation, 0);
