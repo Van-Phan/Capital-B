@@ -32,7 +32,7 @@ public class PlayerStats : MonoBehaviour
 
         if(currHealth <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }
