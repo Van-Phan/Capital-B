@@ -19,6 +19,7 @@ public class ItemPickup : Interactable
     }
     void PickUp()
     {
+<<<<<<< HEAD
         Debug.Log("Picked up  " + item.name);
         if (Inventory.instance.Add(item))
         {
@@ -28,6 +29,11 @@ public class ItemPickup : Interactable
         {
             Debug.Log("Couldn't Pick Up Item");
         }
+=======
+        Debug.Log("Picked up  " + transform.name);
+        Inventory.instance.Add(Item); 
+        Destroy(gameObject);
+>>>>>>> parent of 6f6c7be... Revert "Adding item and inventory"
     }
 
     // Update is called once per frame
