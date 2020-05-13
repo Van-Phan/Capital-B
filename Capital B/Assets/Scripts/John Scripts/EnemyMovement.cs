@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public GameObject player;
+    public GameObject target;
     private float xVel;
     private float zVel;
     // Start is called before the first frame update
@@ -18,8 +18,8 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xVel = player.transform.position.x - rb.position.x;
-        zVel = player.transform.position.z - rb.position.z;
+        xVel = target.transform.position.x - rb.position.x;
+        zVel = target.transform.position.z - rb.position.z;
 
         if(xVel > 2)
         {
