@@ -38,6 +38,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    //draws the yellow sphere are the interaction transform
     private void OnDrawGizmosSelected()
     {
         if(interactionTransform == null)

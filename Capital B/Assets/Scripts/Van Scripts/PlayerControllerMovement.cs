@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerControllerMovement : MonoBehaviour
 {
@@ -8,17 +9,22 @@ public class PlayerControllerMovement : MonoBehaviour
     new public Transform camera;
     public CharacterController player;
 
+    //values that can be adjusted
     private float verticalVelocity;
     private float gravity = 9.81f;
     private float jumpForce = 5.0f;
 
+    //values for walk and run
+    //run can be activated using left shift
     public float walkSpeed = 2;
     public float runSpeed = 6;
 
+    //smooths the transition between changing speed
     public float speedSmoothTime = 0.1f;
     float speedSmoothVelocity;
     float currentSpeed;
 
+    //smooths the turn speed of the player
     public float turnSmoothTime = 0.2f;
     float turnSmoothVelocity;
 
@@ -36,6 +42,11 @@ public class PlayerControllerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //code for later which will disable movement when cursor is over inventory
+        //if (EventSystem.current.IsPointerOverGameObject())
+        //{
+        //    return;
+        //}
         //if the player is on the ground apply a downwards velocity
         if (player.isGrounded)
         {
