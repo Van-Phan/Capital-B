@@ -49,6 +49,9 @@ public class InventorySlot : MonoBehaviour
     //activates the item using method
     public void UseItem()
     {
-        item.Use();
+        if (item != null)
+        {
+            item.Use();
+        }
     }
 }
