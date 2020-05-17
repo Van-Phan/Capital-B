@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8544337402540153192}
-  - component: {fileID: 1729378201586693417}
+  - component: {fileID: 9154045203903990783}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchoredPosition: {x: -206, y: 96.499985}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1729378201586693417
+--- !u!114 &9154045203903990783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 751883022686102430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b87a29e637a674fba8e35cfa8a2994, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f4b16ccc27d7a749a78a0c85daddf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 2129642217251206776}
@@ -77,7 +77,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2420151827350011525}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1729378201586693417}
+      - m_Target: {fileID: 9154045203903990783}
         m_MethodName: OnRemoveButton
         m_Mode: 1
         m_Arguments:
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 193bae40a8309344e990ec66976469cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: daac55ed75f41d44d96637d44d374127, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1729378201586693417}
+      - m_Target: {fileID: 9154045203903990783}
         m_MethodName: UseItem
         m_Mode: 1
         m_Arguments:
