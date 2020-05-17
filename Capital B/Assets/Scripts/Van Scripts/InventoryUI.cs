@@ -5,7 +5,8 @@ using UnityEngine;
 public class InventoryUI : MonoBehaviour
 {
     public Transform itemsParent;
-    public GameObject inventoryUI; 
+    public GameObject inventoryUI;
+    public GameObject crossHair;
 
     InventorySlot[] slots;
 
@@ -35,11 +36,15 @@ public class InventoryUI : MonoBehaviour
             if (inventoryUI.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.None;
+                //changes the crosshair to be disabled when you open your inventory
+                crossHair.SetActive(!inventoryUI.activeSelf);
             }
             else
             {
                 //locks and hides cursor to middle of screen, press escape to enable mouse
                 Cursor.lockState = CursorLockMode.Locked;
+                //changes the crosshair to be disabled when you open your inventory
+                crossHair.SetActive(!inventoryUI.activeSelf);
             }
         }
     }
