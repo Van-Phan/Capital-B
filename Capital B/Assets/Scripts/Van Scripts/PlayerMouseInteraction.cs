@@ -38,7 +38,7 @@ public class PlayerMouseInteraction : MonoBehaviour
                 Interactable interactible = hit.collider.GetComponent<Interactable>();
                 if(interactible != null)
                 {
-                    Debug.Log("We hit an interactable object!");
+                    //Debug.Log("We hit an interactable object!");
                     SetFocus(interactible);
                 }
             }

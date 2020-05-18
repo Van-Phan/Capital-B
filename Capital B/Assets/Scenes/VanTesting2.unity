@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -320,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &33917697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,7 +855,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1288,7 +1288,6 @@ GameObject:
   - component: {fileID: 664905899}
   - component: {fileID: 664905902}
   - component: {fileID: 664905901}
-  - component: {fileID: 664905900}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -1310,19 +1309,6 @@ Transform:
   m_Father: {fileID: 1122117497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &664905900
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664905898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &664905901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1824,6 +1810,7 @@ GameObject:
   - component: {fileID: 1122117493}
   - component: {fileID: 1122117499}
   - component: {fileID: 1122117498}
+  - component: {fileID: 1122117500}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -1925,7 +1912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 10
+    baseValue: 1
   armor:
     baseValue: 0
 --- !u!114 &1122117499
@@ -1942,6 +1929,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 4
   interactionTransform: {fileID: 1122117497}
+--- !u!114 &1122117500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122117492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8388e335615cc4dae9e1c07b43ba92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDelay: 0.6
 --- !u!224 &1150466661 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8544337402540153192, guid: 0a1ebc24d2cf5d64cb998843cbd4e5c6,
@@ -3046,6 +3047,20 @@ MonoBehaviour:
     baseValue: 5
   armor:
     baseValue: 0
+--- !u!114 &1967596550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967596541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8388e335615cc4dae9e1c07b43ba92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDelay: 0.6
 --- !u!1 &2011879574
 GameObject:
   m_ObjectHideFlags: 0

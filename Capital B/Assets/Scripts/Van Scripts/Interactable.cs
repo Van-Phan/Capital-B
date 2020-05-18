@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("Interacting with " + transform.name);
+        //Debug.Log("Interacting with " + transform.name);
     }
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class Interactable : MonoBehaviour
             float distance = Vector3.Distance(player.position, interactionTransform.position);
             if(distance <= radius)
             {
-                Debug.Log("Focused on  " + transform.name);
+                //Debug.Log("Focused on  " + transform.name);
                 Interact();
                 hasInteracted = true;
             }
